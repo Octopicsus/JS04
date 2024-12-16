@@ -1,7 +1,5 @@
-let priceUSD = 42;
-let hrivna = "";
+let exchangeRate = 42;
 
-for (let i = 10; i <= 100; i += 10) {
-  hrivna = `${i} USD = ${priceUSD * i} UAH`;
-  console.log(hrivna);
+for (let dollars = 10; dollars <= 100; dollars += 10) {
+  console.log(`${dollars} USD = ${exchangeRate * dollars} UAH`);
 }
