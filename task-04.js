@@ -7,7 +7,6 @@ if (num <= 1) {
   isSimple = false;
 } else {
   for (let i = 2; i <= num / 2; i++) {
-    console.log(i);
     if (num % i === 0) {
       isSimple = false;
     }
@@ -19,6 +18,3 @@ if (isSimple) {
 } else {
   console.log("Your number is NOT simple.");
 }
-
-let x = num % 1;
-console.log(x);
