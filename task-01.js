@@ -16,13 +16,16 @@ for (let i = 0; i < length; i++) {
   do {
     element = prompt("Enter your element");
   } while (element === null);
+
   arr.push(element);
 }
 
 console.log("\nYour list: " + arr.join(" "));
+document.write("<p>" + arr.join(" ") + "</p>");
 
 arr.sort();
 
+document.write("<p>" + arr.join(" ") + "</p>");
 console.log("\nSorted list: " + arr.join(" ") + "\n ");
 
 if (length >= 4) {
@@ -33,5 +36,6 @@ if (length >= 4) {
   );
 }
 
-console.log("Your finale list: " + arr.join(" "));
-console.log("Array lenght: " + arr.length);
+console.log("New list: " + arr.join(" "));
+document.write("<p>" + arr.join(" ") + "</p>");
+console.log("List lenght: " + arr.length);
